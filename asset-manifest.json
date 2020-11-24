@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/google-calculator/static/css/main.457aaf9b.chunk.css",
+    "main.css": "/google-calculator/static/css/main.faf88739.chunk.css",
     "main.js": "/google-calculator/static/js/main.6ec7cac4.chunk.js",
     "main.js.map": "/google-calculator/static/js/main.6ec7cac4.chunk.js.map",
     "runtime-main.js": "/google-calculator/static/js/runtime-main.970fbf75.js",
@@ -10,14 +10,14 @@
     "static/js/3.2ccdb8ad.chunk.js": "/google-calculator/static/js/3.2ccdb8ad.chunk.js",
     "static/js/3.2ccdb8ad.chunk.js.map": "/google-calculator/static/js/3.2ccdb8ad.chunk.js.map",
     "index.html": "/google-calculator/index.html",
-    "static/css/main.457aaf9b.chunk.css.map": "/google-calculator/static/css/main.457aaf9b.chunk.css.map",
+    "static/css/main.faf88739.chunk.css.map": "/google-calculator/static/css/main.faf88739.chunk.css.map",
     "static/js/2.23c13dba.chunk.js.LICENSE.txt": "/google-calculator/static/js/2.23c13dba.chunk.js.LICENSE.txt",
     "static/media/history_image_calc.b3520b29.JPG": "/google-calculator/static/media/history_image_calc.b3520b29.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.970fbf75.js",
     "static/js/2.23c13dba.chunk.js",
-    "static/css/main.457aaf9b.chunk.css",
+    "static/css/main.faf88739.chunk.css",
     "static/js/main.6ec7cac4.chunk.js"
   ]
 }
