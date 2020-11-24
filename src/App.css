@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: Georgia, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.result {
+  display : flex ;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
+  width: 100%;
+  border : 1px solid lightslategray;
+  border-radius: 5px;
+  padding : 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.result p {
+  font-size: 30px;
+  margin: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result button {
+  align-self: flex-start;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  border:  1px solid rgba(119, 134, 150, 0.3);
+
+}
+
+
+.history-item {
+  display : grid ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr ;
+  grid-gap: 50px;
+  justify-content: space-evenly;
+
+}
+
+.history-item button {
+  padding : 5px;
+
+}
+
+.calculator-body {
+  max-width: 400px;
+  margin: auto;
+}
+
+.button {
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px 5px ;
+  justify-items: center;
+  background-color: white;
+  padding: 5px;
+}
+
+.number{
+  width: 100px;
+  height: 50px;
+  padding : 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border:  1px solid white;
+
+}
+/* button {
+  width: 100px;
+  height: 50px;
+  padding : 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border:  1px solid white;
+} */
+
+.Ops {
+  width: 100px;
+  height: 50px;
+  padding : 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border:  1px solid white;
+  background-color: rgba(119, 134, 150, 0.3);
+  color: black
+}
+
+.equalTo {
+  width: 100px;
+  height: 50px;
+  padding : 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border:  1px solid white;
+  background-color: rgb(59, 130, 210);
+  color : white
 }
