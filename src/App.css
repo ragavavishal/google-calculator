@@ -14,17 +14,19 @@ h1 {
   border : 1px solid lightslategray;
   border-radius: 5px;
   padding : 10px;
-  
-}
 
-.show-result {
-  overflow-wrap: break-word;
-  align-self: flex-end;
+  
 }
 
 .result p {
   font-size: 30px;
+  height: auto;
   margin: 5px;
+  display : block; 
+  /* overflow-x: scroll; */
+  overflow-wrap: break-word; 
+  max-width : 100%;
+  text-align: end;
 }
 
 .result button {
@@ -51,10 +53,12 @@ h1 {
 }
 
 .history-item button {
+  display: block;
+  max-width: 160px;
   padding : 5px;
   border-radius: 5px;
   border : 1px solid rgb(46, 132, 198);
-  overflow :hidden;
+  overflow-wrap: break-word;
 }
 
 .calculator-body {

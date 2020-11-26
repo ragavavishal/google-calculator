@@ -50,26 +50,22 @@ const App = () => {
                 console.log("Error prev === % && op_arr.includes(button)")
                 setResult(result+button)
                 setPrev(button)
+            } else  if(prev === "="){
+                if(history.length>0)
+                {
+                let temp = history[history.length-1]
+                let key = Object.keys(temp)
+                key = key[0]
+            // console.log(button, prev,result)
+            if(temp[key] === result){
+                console.log("temp[key] === result")
+                setResult(result+button)
+                setPrev(button)
+                setAc(false)
+            }}
             } else {
-            //     if(history.length>0)
-            //     {
-            //     let temp = history[history.length-1]
-            //     let key = Object.keys(temp)
-            //     key = key[0]
-            // // console.log(button, prev,result)
-            // if(temp[key] === result){
-            //     console.log("temp[key] === result")
-            //     setResult(result+button)
-            //     setPrev(button)
-            // } else {
-            //     setResult(result.slice(0,-1)+button)
-            //     setPrev(button)
-            // }
-            // } else 
-            // {
                 setResult(result.slice(0,-1)+button)
                 setPrev(button)
-            // }
             }
         } else if (prev === "Error"){
             setResult(button)
