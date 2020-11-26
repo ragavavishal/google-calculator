@@ -15,7 +15,8 @@ const DisplayResult = (props) => {
 
     const setResultfromHistory = (str) =>{
         setResult(str)
-        setPrev(str)
+        setPrev(str[str.length-1])
+        // console.log(str[str.length-1])
         setAc(false)
     }
 
@@ -36,8 +37,8 @@ const DisplayResult = (props) => {
             <div className="result">
                 <div className="history-content">{shHistory ? history_content : ''}</div>
                 <button name="history" onClick={() => history()}><img src={history_img} alt="History" width="30" height="30"/></button>
-                <p>{statbar}    </p>
-                <p>{result}</p>
+                <p>{statbar}</p>
+                <p className="show-result">{result}</p>
             </div>
     )
     }
